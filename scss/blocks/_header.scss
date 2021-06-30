@@ -1,0 +1,111 @@
+.header {
+  &__nav {
+    padding: 20px 0;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    margin-right: 80px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $dark;
+    position: relative;
+    &:hover {
+      color: $active;
+    }
+  }
+  &__link--active {
+    position: relative;
+    color: $active;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 80%;
+      height: 2px;
+      background-color: $active;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -5px;
+    }
+  }
+}
+
+.header-presentation {
+  max-width: 100%;
+  min-height: 675px;
+  background-image: url(../../images/img-visual.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &--overlay {
+    width: 100%;
+    min-height: 675px;
+    background-color: rgba(75, 89, 245, 0.8);
+  }
+  &__inner {
+    padding: 150px 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.header-presentation__form {
+  margin-right: 50px;
+  padding: 10px 20px;
+}
+
+.form {
+  background-color: $white;
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  &__title {
+    font-size: 22px;
+    color: $violet;
+    font-weight: 500;
+  }
+  &__input {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: $light-grey;
+    border: none;
+  }
+  &__select {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: $light-grey;
+    border: none;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    margin-left: auto;
+    border-radius: 5px;
+  }
+}
+
+.header-text {
+  color: $white;
+  &__title {
+    font-size: 56px;
+    max-width: 510px;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    max-width: 280px;
+    font-family: 'Marck Script', cursive;
+    font-size: 25px;
+  }
+}

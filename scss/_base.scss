@@ -1,4 +1,30 @@
 body {
-  font-family: serif;
+  font-family: 'Roboto', sans-serif;
   background-color: $white;
+  font-size: 15px;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  //   background-color: #fff;
+}
+
+li {
+  list-style: none;
+  margin-left: 0;
+}
+
+.btn {
+  display: block;
+  padding: 10px 50px;
+  border: none;
+  background-color: $btn-bg;
+  color: $white;
+  transition: background-color 0.3s linear;
+  &:hover {
+    cursor: pointer;
+    background-color: #2c46ec;
+  }
 }
