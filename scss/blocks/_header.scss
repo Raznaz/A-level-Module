@@ -50,22 +50,27 @@
     min-height: 675px;
     background-color: rgba(75, 89, 245, 0.8);
   }
-  &__inner {
-    padding: 150px 0;
-    display: flex;
-    justify-content: center;
-  }
+}
+
+.header-presentation-inner {
+  display: flex;
+  padding: 100px 0;
+}
+
+.flex-item {
+  flex: 0 0 50%;
 }
 
 .header-presentation__form {
-  margin-right: 50px;
-  padding: 10px 20px;
+  padding: 20px 20px;
 }
 
 .form {
   background-color: $white;
   width: 250px;
   height: 350px;
+  margin-left: auto;
+  margin-right: 50px;
   border-radius: 20px;
   &__title {
     font-size: 22px;
@@ -98,6 +103,7 @@
 
 .header-text {
   color: $white;
+  margin-left: 50px;
   &__title {
     font-size: 56px;
     max-width: 510px;
