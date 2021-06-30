@@ -15,6 +15,11 @@ li {
   margin-left: 0;
 }
 
+.title {
+  text-transform: uppercase;
+  color: #6776df;
+}
+
 .btn {
   display: block;
   padding: 10px 50px;
@@ -168,5 +173,53 @@ li {
   max-width: 280px;
   font-family: 'Marck Script', cursive;
   font-size: 25px;
+}
+
+.programs__title {
+  margin-top: 60px;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.programs__subtitle {
+  font-family: 'Marck Script', cursive;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+.programs-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.programs-inner__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 400px;
+          flex: 0 0 400px;
+}
+
+.programs-inner__item-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 200px;
+          flex: 0 0 200px;
+}
+
+.programs-inner__item-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.programs-inner__item-information {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 200px;
+          flex: 0 0 200px;
 }
 /*# sourceMappingURL=style.css.map */
