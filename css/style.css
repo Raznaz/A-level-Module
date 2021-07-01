@@ -313,4 +313,19 @@ li {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+
+.service-presentation {
+  max-width: 100%;
+  min-height: 797px;
+  background-image: url(../../images/img-visual02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.service-presentation--overlay {
+  width: 100%;
+  min-height: 797px;
+  background-color: rgba(75, 89, 245, 0.8);
+}
 /*# sourceMappingURL=style.css.map */

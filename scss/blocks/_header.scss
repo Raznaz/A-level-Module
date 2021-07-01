@@ -39,17 +39,18 @@
 }
 
 .header-presentation {
-  max-width: 100%;
-  min-height: 675px;
-  background-image: url(../../images/img-visual.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  &--overlay {
-    width: 100%;
-    min-height: 675px;
-    background-color: rgba(75, 89, 245, 0.8);
-  }
+  @include presentation-bg(675px, $first-img, $overlay-bg) // max-width: 10
+    // min-height: 675
+    // background-image: $first-i
+    // background-repeat: no-repe
+    // background-position: cent
+    // background-size: cov
+    // &--overla
+    //   width: 10
+    //   min-height: 675
+    //   background-color: rgba(75, 89, 245, 0.
+    //;
+;
 }
 
 .header-presentation-inner {
