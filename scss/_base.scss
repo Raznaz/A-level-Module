@@ -1,14 +1,18 @@
+@font-face {
+  font-family: 'FREESCPT';
+  src: url('../fonts/FREESCPT.woff2'), url('../fonts/FREESCPT.woff');
+}
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: $white;
-  font-size: 15px;
+  color: $dark;
+  font-size: 14px;
 }
 
 .container {
-  max-width: 820px;
-  padding: 0 10px;
+  max-width: 1200px;
+  padding: 0 15px;
   margin: 0 auto;
-  //   background-color: #fff;
 }
 
 li {
