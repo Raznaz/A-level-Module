@@ -29,7 +29,7 @@
   box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.4);
 
   &__img {
-    object-fit: cover;
+    // object-fit: cover;
   }
   &__info-inner {
     padding: 50px 30px 30px;
@@ -39,6 +39,7 @@
     margin-bottom: 35px;
     font-size: 20px;
     color: $card-title;
+    text-transform: uppercase;
   }
   &__text {
     margin-bottom: 40px;
