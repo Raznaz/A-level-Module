@@ -8,11 +8,14 @@
 .about-info {
   flex: 0 0 50%;
   &__title {
+    margin-bottom: 25px;
   }
   &__text {
+    max-width: 470px;
   }
 }
 
 .slider {
   flex: 0 0 50%;
+  min-width: 0;
 }
