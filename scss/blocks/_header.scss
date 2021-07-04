@@ -1,4 +1,5 @@
 .header {
+  margin-bottom: 120px;
   &__nav {
     padding: 45px 0;
   }
@@ -23,18 +24,18 @@
     text-decoration: none;
     color: $dark;
     &:hover {
-      color: $active;
+      color: $nav-active;
     }
   }
   &__link--active {
     position: relative;
-    color: $active;
+    color: $nav-active;
     &::before {
       content: '';
       position: absolute;
       width: 80%;
       height: 2px;
-      background-color: $active;
+      background-color: $nav-active;
       left: 50%;
       transform: translateX(-50%);
       bottom: -5px;
@@ -123,12 +124,15 @@
 .header-text {
   color: $white;
   padding-left: 50px;
+
   &__title {
     max-width: 482px;
+    margin-bottom: 45px;
     font-size: 48px;
     line-height: 1.5;
     text-transform: uppercase;
   }
+
   &__subtitle {
     max-width: 300px;
     font-family: 'FREESCPT';
