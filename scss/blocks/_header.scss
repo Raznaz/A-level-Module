@@ -59,7 +59,10 @@
 
 .header-presentation-inner {
   display: flex;
+  align-items: center;
   padding: 100px 0;
+
+  // padding: 100px 0;
 }
 
 .flex-item {
@@ -67,37 +70,48 @@
 }
 
 .header-presentation__form {
-  padding: 20px 20px;
+  padding: 40px 20px 30px;
+}
+
+.header-presentation__form-container {
+  padding-right: 50px;
 }
 
 .form {
   background-color: $white;
-  width: 250px;
-  height: 350px;
+  width: 300px;
+  // height: 350px;
   margin-left: auto;
-  margin-right: 50px;
+  // padding-right: 50px;
   border-radius: 20px;
   &__title {
-    font-size: 22px;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 26px;
     color: $violet;
-    font-weight: 500;
+    font-weight: 600;
   }
   &__input {
+    font-family: 'Open Sans', sans-serif;
     width: 100%;
-    padding: 10px 10px;
+    padding: 20px 10px;
     border-radius: 10px;
     margin-bottom: 20px;
     background-color: $light-grey;
     border: none;
+
+    &::placeholder {
+      color: $grey888;
+    }
   }
   &__select {
     width: 100%;
-    padding: 10px 10px;
+    margin-bottom: 20px;
+    padding: 20px 10px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    color: $grey888;
     background-color: $light-grey;
     border: none;
-    margin-bottom: 40px;
   }
 
   &__btn {
@@ -108,15 +122,16 @@
 
 .header-text {
   color: $white;
-  //   margin-left: 50px;
+  padding-left: 50px;
   &__title {
-    font-size: 56px;
-    max-width: 510px;
+    max-width: 482px;
+    font-size: 48px;
+    line-height: 1.5;
     text-transform: uppercase;
   }
   &__subtitle {
-    max-width: 280px;
+    max-width: 300px;
     font-family: 'FREESCPT';
-    font-size: 25px;
+    font-size: 40px;
   }
 }
