@@ -7,13 +7,18 @@ $light-grey: #f2f2f2;
 $violet: #5b6ceb;
 
 $nav-active: #5363db;
+$overlay-bg: rgba(83, 99, 219, 0.7);
+
+// Button
 $btn-bg: $violet;
 $btn-acitve: #475bf1;
 $title: $violet;
 
-$overlay-bg: rgba(83, 99, 219, 0.7);
+// Card
+$card-title: $dark-grey;
+$card-text: #555;
+$card-type: #999;
 
 // path img
-
 $first-img: url(../../images/img-visual.jpg);
 $second-img: url(../../images/img-visual02.jpg);

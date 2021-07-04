@@ -30,6 +30,11 @@ li {
   margin-left: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 15px;
@@ -54,4 +59,8 @@ li {
     cursor: pointer;
     background-color: $btn-acitve;
   }
+}
+
+.section {
+  margin-bottom: 100px;
 }
