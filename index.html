@@ -45,32 +45,34 @@
         </div>
         </nav>
         <div class="header-presentation">
-            <div class="header-presentation--overlay">
-                <div class="header-presentation-inner">
-                    <div class="header-presentation__form-container flex-item">
-                        <form class="form header-presentation__form" action="/" method="GET">
-                            <p class="form__title">Trial Class</p>
-                            <input class="form__input" type="text" name="" placeholder="Enter your name">
-                            <input class="form__input" type="text" name="" placeholder="Enter your phone">
-                            <select class="form__select" name="class-name" id="">
-                                <option disabled selected>Select your class</option>
-                                <option value="yoga">Yoga</option>
-                                <option value="zumba">Zumba</option>
-                                <option value="lose_weight">Yoga-lose weight</option>
-                                <option value="yoga_children">Yoga-for children</option>
-                            </select>
-                            <button class="btn form__btn" type="submit">Try it</button>
-                        </form>
-                    </div>
-                    <div class="header-text flex-item">
-                        <h1 class="header-text__title">
-                            Just Balance Your Mind & Body
-                        </h1>
-                        <p class="header-text__subtitle">Create the healthy living for yourself</p>
-                    </div>
+            <!-- <div class="header-presentation--overlay"> -->
+            <img class="header-presentation__img" src="images/img-visual.jpg" alt="yoga">
+            <!-- </div> -->
+            <div class="header-presentation-inner">
+                <div class="header-presentation__form-container flex-item">
+                    <form class="form header-presentation__form" action="/" method="GET">
+                        <p class="form__title">Trial Class</p>
+                        <input class="form__input" type="text" name="" placeholder="Enter your name">
+                        <input class="form__input" type="text" name="" placeholder="Enter your phone">
+                        <select class="form__select" name="class-name" id="">
+                            <option disabled selected>Select your class</option>
+                            <option value="yoga">Yoga</option>
+                            <option value="zumba">Zumba</option>
+                            <option value="lose_weight">Yoga-lose weight</option>
+                            <option value="yoga_children">Yoga-for children</option>
+                        </select>
+                        <button class="btn form__btn" type="submit">Try it</button>
+                    </form>
+                </div>
+                <div class="header-text flex-item">
+                    <h1 class="header-text__title">
+                        Just Balance Your Mind & Body
+                    </h1>
+                    <p class="header-text__subtitle">Create the healthy living for yourself</p>
                 </div>
             </div>
         </div>
+
     </header>
     <section class="section programs">
         <div class="container">
@@ -79,9 +81,9 @@
             <div class="cards">
                 <div class="cards__item">
                     <div class="card">
-                        <div class="card__img-container">
-                            <img class="card__img" src="images/img-01.jpg" alt="yoga">
-                        </div>
+                        <!-- <div class="card__img-container"> -->
+                        <img class="card__img" src="images/img-01.jpg" alt="yoga">
+                        <!-- </div> -->
                         <div class="card__info-inner">
                             <h4 class="card__title">
                                 Yoga for Health
@@ -96,9 +98,9 @@
                 </div>
                 <div class="cards__item">
                     <div class="card">
-                        <div class="card__img-container">
-                            <img class="card__img" src="images/img-02.jpg" alt="yoga">
-                        </div>
+                        <!-- <div class="card__img-container"> -->
+                        <img class="card__img" src="images/img-02.jpg" alt="yoga">
+                        <!-- </div> -->
                         <div class="card__info-inner">
                             <h4 class="card__title">
                                 Yoga For Lose Weight
@@ -113,9 +115,9 @@
                 </div>
                 <div class="cards__item">
                     <div class="card">
-                        <div class="card__img-container">
-                            <img class="card__img" src="images/img-03.jpg" alt="yoga">
-                        </div>
+                        <!-- <div class="card__img-container"> -->
+                        <img class="card__img" src="images/img-03.jpg" alt="yoga">
+                        <!-- </div> -->
 
                         <div class="card__info-inner">
                             <h4 class="card__title">
@@ -131,9 +133,9 @@
                 </div>
                 <div class="cards__item">
                     <div class="card">
-                        <div class="card__img-container">
-                            <img class="card__img" src="images/img-04.jpg" alt="yoga">
-                        </div>
+                        <!-- <div class="card__img-container"> -->
+                        <img class="card__img" src="images/img-04.jpg" alt="yoga">
+                        <!-- </div> -->
                         <div class="card__info-inner">
                             <h4 class="card__title">
                                 Yoga For Elderly
@@ -150,16 +152,17 @@
         </div>
     </section>
 
-    <section class="section gallery">
-        <div class="gallery__container">
-            <div class="gallery__box-img">
-                <img class="gallery__img " src="/images/img-grid01.jpg" alt="zumba">
-                <div class="gallery__find-box">
+    <section class="section">
+        <div class="gallery">
+            <div class="gallery__container">
+                <img class="gallery__img" src="/images/img-grid02.jpg" alt="zumba">
+                <div class="gallery__overlay"></div>
+                <a class="gallery__link" href="#">
                     <svg class="gallery__find-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 339.921 339.921"
                         style="enable-background:new 0 0 339.921 339.921;" xml:space="preserve">
                         <g>
-                            <path style="fill:#6776df;" d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
+                            <path class="icon-path" fill="#6776df" d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
                        c-3.171,3.062-10.47,0.653-16.306-5.379l-1.164-1.207c36.425-47.907,32.89-116.499-10.851-160.24
                        c-47.739-47.739-125.142-47.739-172.875,0c-47.739,47.739-47.739,125.131,0,172.87c44.486,44.492,114.699,47.472,162.704,9.045
                        l0.511,0.533c5.825,6.032,7.995,13.402,4.814,16.469c-3.166,3.068-1.012,10.443,4.83,16.464l81.341,84.11
@@ -169,16 +172,17 @@
                         </g>
 
                     </svg>
-                </div>
+                </a>
             </div>
-            <div class="gallery__box-img">
-                <img class="gallery__img img-test" src="/images/img-grid02.jpg" alt="zumba">
-                <div class="gallery__find-box">
+            <div class="gallery__container">
+                <img class="gallery__img" src="/images/img-grid03.jpg" alt="zumba">
+                <div class="gallery__overlay"></div>
+                <a class="gallery__link" href="#">
                     <svg class="gallery__find-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 339.921 339.921"
                         style="enable-background:new 0 0 339.921 339.921;" xml:space="preserve">
                         <g>
-                            <path style="fill:#6776df;" d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
+                            <path class="icon-path" fill="#6776df" d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
                        c-3.171,3.062-10.47,0.653-16.306-5.379l-1.164-1.207c36.425-47.907,32.89-116.499-10.851-160.24
                        c-47.739-47.739-125.142-47.739-172.875,0c-47.739,47.739-47.739,125.131,0,172.87c44.486,44.492,114.699,47.472,162.704,9.045
                        l0.511,0.533c5.825,6.032,7.995,13.402,4.814,16.469c-3.166,3.068-1.012,10.443,4.83,16.464l81.341,84.11
@@ -188,16 +192,17 @@
                         </g>
 
                     </svg>
-                </div>
+                </a>
             </div>
-            <div class="gallery__box-img">
-                <img class="gallery__img " src="/images/img-grid03.jpg" alt="zumba">
-                <div class="gallery__find-box">
+            <div class="gallery__container">
+                <img class="gallery__img" src="/images/img-grid04.jpg" alt="zumba">
+                <div class="gallery__overlay"></div>
+                <a class="gallery__link" href="#">
                     <svg class="gallery__find-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 339.921 339.921"
                         style="enable-background:new 0 0 339.921 339.921;" xml:space="preserve">
                         <g>
-                            <path style="fill:#6776df;" d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
+                            <path class="icon-path" fill="#6776df" d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
                        c-3.171,3.062-10.47,0.653-16.306-5.379l-1.164-1.207c36.425-47.907,32.89-116.499-10.851-160.24
                        c-47.739-47.739-125.142-47.739-172.875,0c-47.739,47.739-47.739,125.131,0,172.87c44.486,44.492,114.699,47.472,162.704,9.045
                        l0.511,0.533c5.825,6.032,7.995,13.402,4.814,16.469c-3.166,3.068-1.012,10.443,4.83,16.464l81.341,84.11
@@ -207,16 +212,17 @@
                         </g>
 
                     </svg>
-                </div>
+                </a>
             </div>
-            <div class="gallery__box-img">
-                <img class="gallery__img img-test" src="/images/img-grid04.jpg" alt="zumba">
-                <div class="gallery__find-box">
+            <div class="gallery__container">
+                <img class="gallery__img" src="/images/img-grid05.jpg" alt="zumba">
+                <div class="gallery__overlay"></div>
+                <a class="gallery__link" href="#">
                     <svg class="gallery__find-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 339.921 339.921"
                         style="enable-background:new 0 0 339.921 339.921;" xml:space="preserve">
                         <g>
-                            <path style="fill:#6776df;" d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
+                            <path class="icon-path" fill="#6776df" d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
                        c-3.171,3.062-10.47,0.653-16.306-5.379l-1.164-1.207c36.425-47.907,32.89-116.499-10.851-160.24
                        c-47.739-47.739-125.142-47.739-172.875,0c-47.739,47.739-47.739,125.131,0,172.87c44.486,44.492,114.699,47.472,162.704,9.045
                        l0.511,0.533c5.825,6.032,7.995,13.402,4.814,16.469c-3.166,3.068-1.012,10.443,4.83,16.464l81.341,84.11
@@ -226,16 +232,17 @@
                         </g>
 
                     </svg>
-                </div>
+                </a>
             </div>
-            <div class="gallery__box-img">
-                <img class="gallery__img img-test" src="/images/img-grid05.jpg" alt="zumba">
-                <div class="gallery__find-box">
+            <div class="gallery__container">
+                <img class="gallery__img" src="/images/img-grid06.jpg" alt="zumba">
+                <div class="gallery__overlay"></div>
+                <a class="gallery__link" href="#">
                     <svg class="gallery__find-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 339.921 339.921"
                         style="enable-background:new 0 0 339.921 339.921;" xml:space="preserve">
                         <g>
-                            <path style="fill:#6776df;" d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
+                            <path class="icon-path" fill="#6776df" d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
                        c-3.171,3.062-10.47,0.653-16.306-5.379l-1.164-1.207c36.425-47.907,32.89-116.499-10.851-160.24
                        c-47.739-47.739-125.142-47.739-172.875,0c-47.739,47.739-47.739,125.131,0,172.87c44.486,44.492,114.699,47.472,162.704,9.045
                        l0.511,0.533c5.825,6.032,7.995,13.402,4.814,16.469c-3.166,3.068-1.012,10.443,4.83,16.464l81.341,84.11
@@ -245,16 +252,17 @@
                         </g>
 
                     </svg>
-                </div>
+                </a>
             </div>
-            <div class="gallery__box-img">
-                <img class="gallery__img img-test" src="/images/img-grid06.jpg" alt="zumba">
-                <div class="gallery__find-box">
+            <div class="gallery__container">
+                <img class="gallery__img" src="/images/img-grid07.jpg" alt="zumba">
+                <div class="gallery__overlay"></div>
+                <a class="gallery__link" href="#">
                     <svg class="gallery__find-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 339.921 339.921"
                         style="enable-background:new 0 0 339.921 339.921;" xml:space="preserve">
                         <g>
-                            <path style="fill:#6776df;" d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
+                            <path class="icon-path" fill="#6776df" d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
                        c-3.171,3.062-10.47,0.653-16.306-5.379l-1.164-1.207c36.425-47.907,32.89-116.499-10.851-160.24
                        c-47.739-47.739-125.142-47.739-172.875,0c-47.739,47.739-47.739,125.131,0,172.87c44.486,44.492,114.699,47.472,162.704,9.045
                        l0.511,0.533c5.825,6.032,7.995,13.402,4.814,16.469c-3.166,3.068-1.012,10.443,4.83,16.464l81.341,84.11
@@ -264,16 +272,17 @@
                         </g>
 
                     </svg>
-                </div>
+                </a>
             </div>
-            <div class="gallery__box-img">
-                <img class="gallery__img img-test" src="/images/img-grid07.jpg" alt="zumba">
-                <div class="gallery__find-box">
+            <div class="gallery__container">
+                <img class="gallery__img" src="/images/img-grid08.jpg" alt="zumba">
+                <div class="gallery__overlay"></div>
+                <a class="gallery__link" href="#">
                     <svg class="gallery__find-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 339.921 339.921"
                         style="enable-background:new 0 0 339.921 339.921;" xml:space="preserve">
                         <g>
-                            <path style="fill:#6776df;" d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
+                            <path class="icon-path" fill="#6776df" d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
                        c-3.171,3.062-10.47,0.653-16.306-5.379l-1.164-1.207c36.425-47.907,32.89-116.499-10.851-160.24
                        c-47.739-47.739-125.142-47.739-172.875,0c-47.739,47.739-47.739,125.131,0,172.87c44.486,44.492,114.699,47.472,162.704,9.045
                        l0.511,0.533c5.825,6.032,7.995,13.402,4.814,16.469c-3.166,3.068-1.012,10.443,4.83,16.464l81.341,84.11
@@ -283,16 +292,17 @@
                         </g>
 
                     </svg>
-                </div>
+                </a>
             </div>
-            <div class="gallery__box-img">
-                <img class="gallery__img img-test" src="/images/img-grid08.jpg" alt="zumba">
-                <div class="gallery__find-box">
+            <div class="gallery__container">
+                <img class="gallery__img" src="/images/img-grid01.jpg" alt="zumba">
+                <div class="gallery__overlay"></div>
+                <a class="gallery__link" href="#">
                     <svg class="gallery__find-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 339.921 339.921"
                         style="enable-background:new 0 0 339.921 339.921;" xml:space="preserve">
                         <g>
-                            <path style="fill:#6776df;" d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
+                            <path class="icon-path" fill="#6776df" d="M335.165,292.071l-81.385-84.077c-5.836-6.032-13.13-8.447-16.29-5.363
                        c-3.171,3.062-10.47,0.653-16.306-5.379l-1.164-1.207c36.425-47.907,32.89-116.499-10.851-160.24
                        c-47.739-47.739-125.142-47.739-172.875,0c-47.739,47.739-47.739,125.131,0,172.87c44.486,44.492,114.699,47.472,162.704,9.045
                        l0.511,0.533c5.825,6.032,7.995,13.402,4.814,16.469c-3.166,3.068-1.012,10.443,4.83,16.464l81.341,84.11
@@ -302,7 +312,7 @@
                         </g>
 
                     </svg>
-                </div>
+                </a>
             </div>
 
         </div>
@@ -342,10 +352,199 @@
         </div>
     </section>
 
-    <section class="section service">
-        <div class="service-presentation">
-            <div class="service-presentation--overlay">
-                <div class="service-presentation-inner">
+    <div class="section service">
+        <div class="service__overlay">
+            <img class="service__img-bg" src="images/img-visual02.jpg" alt="yoga">
+        </div>
+        <div class="service__bg">
+            <div class="container">
+                <div class="elements service__elements">
+                    <div class="elements__item">
+                        <div class="element">
+                            <div class="element__img-container">
+                                <img class="element__img" src="images/ico-01.png" alt="heart">
+                            </div>
+                            <div class="element__title">
+                                IMPROVED OVERALL
+                                HEALTH
+                            </div>
+                            <div class="element__text">
+                                Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut
+                                aliquip
+                                ex ea com.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elements__item">
+                        <div class="element">
+                            <div class="element__img-container">
+                                <img class="element__img" src="images/ico-02.png" alt="heart">
+                            </div>
+                            <div class="element__title">
+                                INCREASED
+                                CONCENTRATION
+                            </div>
+                            <div class="element__text">
+                                Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut
+                                aliquip
+                                ex ea com.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elements__item">
+                        <div class="element">
+                            <div class="element__img-container">
+                                <img class="element__img" src="images/ico-03.png" alt="heart">
+                            </div>
+                            <div class="element__title">
+                                BLANCE
+                                YOUR MIND
+                            </div>
+                            <div class="element__text">
+                                Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut
+                                aliquip
+                                ex ea com.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elements__item">
+                        <div class="element">
+                            <div class="element__img-container">
+                                <img class="element__img" src="images/ico-04.png" alt="heart">
+                            </div>
+                            <div class="element__title">
+                                SLEEP
+                                BETTER
+                            </div>
+                            <div class="element__text">
+                                Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut
+                                aliquip
+                                ex ea com.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elements__item">
+                        <div class="element">
+                            <div class="element__img-container">
+                                <img class="element__img" src="images/ico-05.png" alt="heart">
+                            </div>
+                            <div class="element__title">
+                                IMPROVED OVERALL
+                                HEALTH
+                            </div>
+                            <div class="element__text">
+                                Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut
+                                aliquip
+                                ex ea com.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elements__item">
+                        <div class="element">
+                            <div class="element__img-container">
+                                <img class="element__img" src="images/ico-06.png" alt="heart">
+                            </div>
+                            <div class="element__title">
+                                IMPROVED OVERALL
+                                HEALTH
+                            </div>
+                            <div class="element__text">
+                                Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut
+                                aliquip
+                                ex ea com.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elements__item">
+                        <div class="element">
+                            <div class="element__img-container">
+                                <img class="element__img" src="images/ico-07.png" alt="heart">
+                            </div>
+                            <div class="element__title">
+                                IMPROVED OVERALL
+                                HEALTH
+                            </div>
+                            <div class="element__text">
+                                Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut
+                                aliquip
+                                ex ea com.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elements__item">
+                        <div class="element">
+                            <div class="element__img-container">
+                                <img class="element__img" src="images/ico-08.png" alt="heart">
+                            </div>
+                            <div class="element__title">
+                                IMPROVED OVERALL
+
+                            </div>
+                            <div class="element__text">
+                                Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut
+                                aliquip
+                                ex ea com.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="section price">
+        <div class="container">
+            <div class="price-row">
+                <div class="price-row__items">
+                    <div class="card-price">
+                        <div class="card-price__amount-container">
+                            <span class="card-price__currency">$</span>
+                            <p class="card-price__amount">49</p>
+                            <span class="card-price__period">/ month</span>
+                        </div>
+                        <ul class="description">
+                            <li class="description__item">Entry Date: MON-FRI</li>
+                            <li class="description__item">ENTRY TIME: 8A.M – 8P.M</li>
+                            <li class="description__item">NUTRITION ADVICER: NO</li>
+                        </ul>
+                        <div class="btn-container">
+                            <button class="card-price__btn" type="submit">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-row__items">
+                    <div class="card-price">
+                        <div class="card-price__amount-container">
+                            <span class="card-price__currency">$</span>
+                            <p class="card-price__amount">69</p>
+                            <span class="card-price__period">/ month</span>
+                        </div>
+                        <ul class="description">
+                            <li class="description__item">Entry Date: MON-FRI</li>
+                            <li class="description__item">ENTRY TIME: 8A.M – 8P.M</li>
+                            <li class="description__item">NUTRITION ADVICER: NO</li>
+                        </ul>
+                        <div class="btn-container">
+                            <button class="card-price__btn" type="submit">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-row__items">
+                    <div class="card-price">
+                        <div class="card-price__amount-container">
+                            <span class="card-price__currency">$</span>
+                            <p class="card-price__amount">99</p>
+                            <span class="card-price__period">/ month</span>
+                        </div>
+                        <ul class="description">
+                            <li class="description__item">Entry Date: MON-FRI</li>
+                            <li class="description__item">ENTRY TIME: 8A.M – 8P.M</li>
+                            <li class="description__item">NUTRITION ADVICER: NO</li>
+                        </ul>
+                        <div class="btn-container">
+                            <button class="card-price__btn" type="submit">Buy now</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -23,8 +23,25 @@
     font-weight: 600;
     text-decoration: none;
     color: $dark;
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      bottom: -5px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: $nav-active;
+      transform: scale(0);
+      transition: transform 0.4s linear;
+      opacity: 0;
+    }
     &:hover {
       color: $nav-active;
+      &::after {
+        transform: scale(1);
+        opacity: 1;
+      }
     }
   }
   &__link--active {
@@ -44,24 +61,49 @@
 }
 
 .header-presentation {
-  @include presentation-bg(675px, $first-img, $overlay-bg) // max-width: 10
-    // min-height: 675
-    // background-image: $first-i
-    // background-repeat: no-repe
-    // background-position: cent
-    // background-size: cov
-    // &--overlay
-    //   width: 10
-    //   min-height: 675
-    //   background-color: rgba(75, 89, 245, 0.
-    //;
-;
+  // padding: 100px 0;
+  position: relative;
+  // &--overlay {
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #5363db;
+    opacity: 0.7;
+    // }
+  }
+  &__img {
+    display: block;
+  }
+
+  // @include presentation-bg(675px, $first-img, $overlay-bg)
+  // max-width: 10
+  // min-height: 675
+  // background-image: $first-i
+  // background-repeat: no-repe
+  // background-position: cent
+  // background-size: cov
+  // &--overlay
+  //   width: 10
+  //   min-height: 675
+  //   background-color: rgba(75, 89, 245, 0.
+  //;
 }
 
 .header-presentation-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
   display: flex;
   align-items: center;
-  padding: 100px 0;
+  // padding: 100px 0;
 
   // padding: 100px 0;
 }
