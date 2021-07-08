@@ -26,14 +26,20 @@ p {
   padding: 0;
 }
 
-li {
+li,
+ul {
   list-style: none;
-  margin-left: 0;
+  margin: 0;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.wrapper {
+  overflow: hidden;
+  width: 100%;
 }
 
 .container {
@@ -600,24 +606,35 @@ img {
   right: 0;
 }
 
+.price {
+  position: relative;
+}
+
+.price--decor {
+  background-image: url(../../images/bg-03.jpg);
+  background-position: right bottom;
+  padding: 100px 0;
+  background-repeat: no-repeat;
+}
+
 .price-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 -10px;
 }
 
 .price-row__items {
-  -ms-flex-preferred-size: calc(100% / 3);
-      flex-basis: calc(100% / 3);
-  padding: 0 10px;
+  -ms-flex-preferred-size: calc(100% / 3 - 30px);
+      flex-basis: calc(100% / 3 - 30px);
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px #eee;
+          box-shadow: 0 0 10px #eee;
+  margin-right: 30px;
 }
 
 .card-price {
-  -webkit-box-shadow: 0 0 10px #000;
-          box-shadow: 0 0 10px #000;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -634,6 +651,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding: 50px 0;
+  margin-bottom: 10px;
 }
 
 .card-price__currency {
@@ -681,15 +699,14 @@ img {
 }
 
 .description {
-  padding: 50px 50px 0 50px;
-  text-align: center;
+  padding: 50px 60px 0 60px;
 }
 
 .description__item {
-  display: inline-block;
+  display: block;
   position: relative;
   text-transform: uppercase;
-  font-weight: 18px;
+  font-size: 18px;
   line-height: 24px;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -715,5 +732,138 @@ img {
 
 .btn-container {
   text-align: center;
+}
+
+.footer {
+  background-color: #5b6ceb;
+}
+
+.footer-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 40px;
+}
+
+.footer-item {
+  -ms-flex-preferred-size: calc(100% / 2);
+      flex-basis: calc(100% / 2);
+}
+
+.footer-item__title {
+  margin-bottom: 60px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.footer-item__text {
+  margin-bottom: 70px;
+  width: 470px;
+  color: #fff;
+  line-height: 22px;
+}
+
+.social-img-icon {
+  width: 30px;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-container--left {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.contact-container--right {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.flex-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.element {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.adress {
+  position: relative;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.adress::before {
+  position: absolute;
+  content: '';
+  display: block;
+  background-image: url("../../images/location.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: -40px;
+}
+
+.phone {
+  position: relative;
+}
+
+.phone::before {
+  position: absolute;
+  content: '';
+  display: block;
+  background-image: url("../../images/call.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: -40px;
+}
+
+.phone__link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.mail {
+  margin-bottom: 30px;
+}
+
+.mail a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.website a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.copyright {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #5363d8;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
