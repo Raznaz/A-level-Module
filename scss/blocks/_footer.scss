@@ -1,110 +1,118 @@
 .footer {
   background-color: $violet;
 }
-.footer-row {
+
+.footer-inner {
   display: flex;
-  padding: 100px 40px;
+  margin: 0 -10px;
+  &__items {
+    flex-basis: (100% / 2);
+    padding: 100px 10px;
+  }
 }
 
-.footer-item {
-  flex-basis: calc(100% / 2);
+.block {
   &__title {
     margin-bottom: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
     font-size: 18px;
     line-height: 22px;
     color: $white;
-    font-weight: 700;
   }
   &__text {
-    margin-bottom: 70px;
     width: 470px;
+    margin-bottom: 70px;
     color: $white;
     line-height: 22px;
   }
+  &__link-icon {
+    text-decoration: none;
+  }
+
+  &__icon {
+    margin-right: 20px;
+    color: $white;
+    font-size: 20px;
+    &:hover {
+      cursor: pointer;
+      color: #ccc;
+    }
+  }
 }
 
-.social-img-icon {
-  width: 30px;
-}
-
-.contact-container {
+.contact-inform-inner {
   display: flex;
-  justify-content: space-between;
-  &--left {
-    flex-basis: 50%;
-    // background-color: green;
-  }
-  &--right {
-    flex-basis: 50%;
-    // background-color: green;
+  width: 470px;
+  padding-left: 40px;
+  &__items {
+    flex-basis: calc(100% / 2);
   }
 }
+.item {
+  &__text {
+    width: 160px;
+    min-height: 45px;
+    color: $white;
+    margin-bottom: 30px;
+  }
 
-.flex-contact {
-  display: flex;
-  flex-direction: column;
-}
-.element {
-  flex-grow: 1;
-}
-.adress {
-  position: relative;
-  color: $white;
-  margin-bottom: 30px;
-
-  &::before {
-    position: absolute;
-    content: '';
-    display: block;
-    background-image: url('../../images/location.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 24px;
-    height: 24px;
-    top: 0;
-    left: -40px;
+  &__icon-location {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '\e905';
+      top: 0px;
+      left: -40px;
+      font-size: 20px;
+      font-family: icomoon;
+    }
   }
-}
-
-.phone {
-  position: relative;
-  &::before {
-    position: absolute;
-    content: '';
-    display: block;
-    background-image: url('../../images/call.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 24px;
-    height: 24px;
-    top: 0;
-    left: -40px;
+  &__icon-phone {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '\e909';
+      top: 0px;
+      left: -40px;
+      font-size: 20px;
+      font-family: icomoon;
+    }
   }
+  &__icon-mail {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '\e900';
+      top: 0px;
+      left: -40px;
+      font-size: 20px;
+      font-family: icomoon;
+    }
+  }
+
+  &__icon-web {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '\e90b';
+      top: 0px;
+      left: -40px;
+      font-size: 20px;
+      font-family: icomoon;
+    }
+  }
+
   &__link {
-    display: block;
-    text-decoration: none;
-    color: $white;
-  }
-}
-
-.mail {
-  margin-bottom: 30px;
-  a {
-    color: $white;
-    text-decoration: none;
-  }
-}
-
-.website {
-  a {
+    display: inline-block;
     text-decoration: none;
     color: $white;
   }
 }
 
 .copyright {
-  padding: 20px 0;
+  padding: 40px 0;
   text-align: center;
   background-color: #5363d8;
-  color: #fff;
+  color: #b7bffc;
 }
