@@ -728,8 +728,15 @@ img {
 
 .gallery__container {
   position: relative;
-  -ms-flex-preferred-size: calc(100% / 4);
-      flex-basis: calc(100% / 4);
+  -ms-flex-preferred-size: calc(100% / 2);
+      flex-basis: calc(100% / 2);
+}
+
+@media (min-width: 768px) {
+  .gallery__container {
+    -ms-flex-preferred-size: calc(100% / 4);
+        flex-basis: calc(100% / 4);
+  }
 }
 
 .gallery__container:hover .gallery__overlay {

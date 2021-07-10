@@ -3,7 +3,12 @@
   flex-wrap: wrap;
   &__container {
     position: relative;
-    flex-basis: calc(100% / 4);
+    flex-basis: calc(100% / 2);
+
+    @media (min-width: 768px) {
+      flex-basis: calc(100% / 4);
+    }
+
     &:hover .gallery__overlay {
       opacity: 0.7;
     }
