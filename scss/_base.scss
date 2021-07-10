@@ -47,9 +47,13 @@ img {
 }
 
 .title {
-  font-size: 30px;
+  font-size: 25px;
   text-transform: uppercase;
   color: $title;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .btn {
@@ -69,5 +73,9 @@ img {
 }
 
 .section {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 100px;
+  }
 }
