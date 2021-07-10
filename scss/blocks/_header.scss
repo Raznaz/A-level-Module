@@ -9,6 +9,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  // @media (min-width: 768px) {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  // }
 }
 
 .nav {
@@ -77,24 +83,37 @@
 
 .header-presentation {
   position: relative;
+
+  &__form-container {
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      padding-right: 50px;
+    }
+  }
+
+  &__form {
+    padding: 40px 20px 30px;
+  }
 }
 
 .header-presentation-inner {
   position: relative;
   display: flex;
-  padding: 120px 0;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+
+  @media (min-width: 768px) {
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    padding: 120px 0;
+  }
 }
 
 .flex-item {
   flex: 0 0 50%;
-}
-
-.header-presentation__form {
-  padding: 40px 20px 30px;
-}
-
-.header-presentation__form-container {
-  padding-right: 50px;
 }
 
 .form {
@@ -102,14 +121,23 @@
   width: 300px;
   // height: 350px;
   margin-left: auto;
-  // padding-right: 50px;
   border-radius: 20px;
+
+  @media (min-width: 768px) {
+    // padding-right: 50px;
+  }
+
   &__title {
     margin: 0;
     margin-bottom: 30px;
     font-size: 26px;
     color: $violet;
     font-weight: 600;
+    text-transform: uppercase;
+
+    @media (min-width: 992px) {
+      text-transform: capitalize;
+    }
   }
   &__input {
     font-family: 'Open Sans', sans-serif;
@@ -142,19 +170,48 @@
 
 .header-text {
   color: $white;
-  padding-left: 50px;
+  padding: 50px 0 0 0;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+    padding: 0 0 0 30px;
+  }
+
+  @media (min-width: 992px) {
+    text-align: left;
+    padding: 0 0 0 30px;
+  }
 
   &__title {
-    max-width: 482px;
-    margin-bottom: 45px;
-    font-size: 48px;
+    max-width: 350px;
+    margin-bottom: 20px;
+    font-size: 36px;
     line-height: 1.5;
     text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      max-width: 482px;
+      margin-bottom: 20px;
+      font-size: 38px;
+    }
+    @media (min-width: 992px) {
+      margin-bottom: 45px;
+      font-size: 48px;
+    }
   }
 
   &__subtitle {
-    max-width: 300px;
+    max-width: 240px;
+    margin: 0 auto;
     font-family: 'FREESCPT';
-    font-size: 40px;
+    font-size: 32px;
+    line-height: 1.2;
+
+    @media (min-width: 768px) {
+      max-width: 300px;
+      font-size: 40px;
+      margin: 0;
+    }
   }
 }
