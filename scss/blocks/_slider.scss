@@ -24,10 +24,12 @@
     transform: translateY(-50%);
     border-radius: 50%;
     border: none;
-    box-shadow: 5px 5px 10px rgba(145, 145, 145, 0.5);
+    box-shadow: 0px 0px 8px rgba(145, 145, 145, 0.4);
     background-color: $white;
+    transition: box-shadow 0.5s linear;
     &:hover {
       cursor: pointer;
+      box-shadow: 0px 0px 10px rgba(145, 145, 145, 0.6);
     }
     &::after {
       content: '';
@@ -39,11 +41,14 @@
       border-right: 2px solid $violet;
       border-top: 2px solid $violet;
     }
+
+    &:hover::after {
+      border-color: #374eff;
+    }
   }
 
   .slick-arrow.slick-prev {
     transform: translate(0, -50%) rotate(180deg);
-
     left: 0;
   }
   .slick-arrow.slick-next {
