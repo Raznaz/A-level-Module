@@ -3,10 +3,21 @@
 
 .about-inner {
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .about-info {
   flex: 0 0 50%;
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
   &__title {
     margin-bottom: 25px;
   }

@@ -29,6 +29,7 @@ li,
 ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 img {
@@ -63,7 +64,7 @@ img {
   border: none;
   background-color: $btn-bg;
   color: $white;
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
   transition: background-color 0.3s linear;
 
   &:hover {

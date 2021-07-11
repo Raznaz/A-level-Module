@@ -1,55 +1,79 @@
 .service {
   position: relative;
+}
 
-  .elements {
-    display: flex;
-    flex-wrap: wrap;
+.elements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0;
+  margin: 0 -20px;
+
+  @media (min-width: 768px) {
     padding: 100px 0;
-    margin: 0 -20px;
+  }
 
-    &__item {
-      display: flex;
-      flex-basis: (100% / 4);
+  &__item {
+    display: flex;
+    // flex-basis: (100% / 4);
+    padding: 0 20px;
+    margin-bottom: 30px;
+
+    @media (min-width: 567px) {
+      flex-basis: (100% / 2);
       padding: 0 20px;
       margin-bottom: 60px;
     }
+
+    @media (min-width: 768px) {
+      flex-basis: (100% / 4);
+      padding: 0 15px;
+    }
+
+    @media (min-width: 992px) {
+      padding: 0 20px;
+    }
   }
+}
 
-  .element {
+.element {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &__img-container {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid $white;
+  }
+  &__img {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__title {
+    width: 185px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    color: $white;
+    flex-grow: 1;
 
-    &__img-container {
-      position: relative;
-      margin: 0 auto;
-      margin-bottom: 30px;
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      border: 3px solid $white;
-    }
-    &__img {
-      position: absolute;
-      display: block;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    &__title {
+    @media (min-width: 768px) {
       width: 160px;
-      margin: 0 auto;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 18px;
-      color: $white;
-      flex-grow: 1;
     }
-    &__text {
-      font-size: 16px;
-      color: $white;
-    }
+  }
+  &__text {
+    font-size: 16px;
+    color: $white;
   }
 }
