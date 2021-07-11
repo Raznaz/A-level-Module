@@ -1249,6 +1249,17 @@ img {
   margin: 0 -10px;
 }
 
+@media (min-width: 992px) {
+  .footer-inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .footer-inner__items {
   padding: 50px 10px 0;
 }
@@ -1270,7 +1281,7 @@ img {
 
 @media (min-width: 992px) {
   .footer-inner__items {
-    padding: 100px 10px;
+    padding: 100px 10px 0px;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
@@ -1316,43 +1327,6 @@ img {
   }
 }
 
-.block__icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-@media (min-width: 567px) {
-  .block__icons {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-}
-
-@media (min-width: 768px) {
-  .block__icons {
-    display: block;
-  }
-}
-
-.block__link-icon {
-  text-decoration: none;
-}
-
-.block__icon {
-  margin-right: 20px;
-  color: #fff;
-  font-size: 20px;
-}
-
-.block__icon:hover {
-  cursor: pointer;
-  color: #ccc;
-}
-
 .contact-inform-inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1374,6 +1348,15 @@ img {
 }
 
 @media (min-width: 768px) {
+  .contact-inform-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: 992px) {
   .contact-inform-inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1451,6 +1434,46 @@ img {
   display: inline-block;
   text-decoration: none;
   color: #fff;
+}
+
+.block-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 567px) {
+  .block-icons {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+@media (min-width: 768px) {
+  .block-icons {
+    display: block;
+    margin-bottom: 100px;
+  }
+}
+
+.block-icons__link-icon {
+  text-decoration: none;
+  z-index: 5;
+}
+
+.block-icons__icon {
+  margin-right: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.block-icons__icon:hover {
+  cursor: pointer;
+  color: #ccc;
 }
 
 .copyright {
