@@ -179,7 +179,7 @@ img {
 
 @media (min-width: 768px) {
   .section {
-    margin-bottom: 100px;
+    margin-bottom: 140px;
   }
 }
 
@@ -196,7 +196,7 @@ img {
 }
 
 .header__nav {
-  padding: 30px 0;
+  padding: 20px 0 20px 0;
 }
 
 .header-inner {
@@ -225,6 +225,10 @@ img {
 
 .nav__item {
   margin-right: 30px;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
 }
 
 .nav__link {
@@ -289,12 +293,12 @@ img {
 
 @media (min-width: 768px) {
   .header-presentation__form-container {
-    padding-right: 50px;
+    padding-right: 45px;
   }
 }
 
 .header-presentation__form {
-  padding: 40px 20px 30px;
+  padding: 30px;
 }
 
 .header-presentation-inner {
@@ -322,7 +326,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 120px 0;
+    padding: 100px 0;
   }
 }
 
@@ -341,7 +345,7 @@ img {
 
 .form__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 26px;
   color: #5363db;
   font-weight: 600;
@@ -356,7 +360,7 @@ img {
 
 .form__input {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 20px 10px;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   border-radius: 10px;
@@ -411,7 +415,7 @@ img {
 @media (min-width: 992px) {
   .header-text {
     text-align: left;
-    padding: 0 0 0 30px;
+    padding: 0 0 10px 50px;
   }
 }
 
@@ -433,7 +437,7 @@ img {
 
 @media (min-width: 992px) {
   .header-text__title {
-    margin-bottom: 45px;
+    margin-bottom: 25px;
     font-size: 48px;
   }
 }
@@ -564,7 +568,8 @@ img {
 
 @media (min-width: 768px) {
   .programs__title {
-    margin: 0 0 20px;
+    letter-spacing: -1px;
+    margin: 0 0 5px;
   }
 }
 
@@ -584,7 +589,7 @@ img {
 
 @media (min-width: 992px) {
   .programs__subtitle {
-    margin-bottom: 75px;
+    margin-bottom: 58px;
   }
 }
 
@@ -609,12 +614,6 @@ img {
     display: flex;
     -ms-flex-preferred-size: calc(100% / 2 - 20px);
         flex-basis: calc(100% / 2 - 20px);
-  }
-}
-
-@media (min-width: 768px) {
-  .cards__item {
-    padding-right: 20px;
   }
 }
 
@@ -659,7 +658,7 @@ img {
 
 @media (min-width: 768px) {
   .card__info-inner {
-    padding: 50px 15px 30px;
+    padding: 50px 20px 30px;
   }
 }
 
@@ -837,7 +836,7 @@ img {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     padding: 0 20px;
-    margin-bottom: 60px;
+    margin: 20px 0;
   }
 }
 
@@ -1090,8 +1089,9 @@ img {
 
 @media (min-width: 992px) {
   .price-row__items {
-    -ms-flex-preferred-size: calc(100% / 3 - 30px);
-        flex-basis: calc(100% / 3 - 30px);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1118,7 +1118,7 @@ img {
 
 @media (min-width: 768px) {
   .card-price__amount-container {
-    padding: 50px 0;
+    padding: 40px 0;
   }
 }
 
@@ -1130,6 +1130,9 @@ img {
   line-height: 34px;
   font-weight: 700;
   margin-right: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .card-price__amount {
@@ -1156,7 +1159,7 @@ img {
 
 .card-price__btn {
   margin-bottom: 30px;
-  padding: 20px 50px;
+  padding: 15px 50px;
   border: 0;
   border-radius: 30px;
   background-color: #5b6ceb;
@@ -1173,7 +1176,6 @@ img {
 @media (min-width: 768px) {
   .card-price__btn {
     margin-bottom: 50px;
-    padding: 20px 50px;
   }
 }
 
@@ -1195,7 +1197,7 @@ img {
 
 @media (min-width: 768px) {
   .description {
-    padding: 50px 60px 0;
+    padding: 30px 60px 0;
   }
 }
 
@@ -1207,12 +1209,12 @@ img {
 
 .description__item {
   display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
   position: relative;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 24px;
-  margin: 0 auto;
-  margin-bottom: 50px;
   font-weight: 400;
 }
 
@@ -1290,7 +1292,7 @@ img {
 
 @media (min-width: 992px) {
   .footer-inner__items {
-    padding: 100px 10px 0px;
+    padding: 90px 10px 0px;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
@@ -1332,7 +1334,7 @@ img {
 @media (min-width: 992px) {
   .block__text {
     width: 470px;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
   }
 }
 
@@ -1380,11 +1382,15 @@ img {
       flex-basis: calc(100% / 2);
 }
 
+.item {
+  margin-right: 150px;
+}
+
 .item__text {
   width: 160px;
   min-height: 45px;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .item__icon-location {
@@ -1471,11 +1477,10 @@ img {
 
 .block-icons__link-icon {
   text-decoration: none;
-  z-index: 5;
 }
 
 .block-icons__icon {
-  margin-right: 20px;
+  margin-right: 14px;
   color: #fff;
   font-size: 20px;
 }

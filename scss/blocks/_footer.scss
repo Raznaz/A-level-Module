@@ -32,7 +32,7 @@
     }
 
     @media (min-width: 992px) {
-      padding: 100px 10px 0px;
+      padding: 90px 10px 0px;
       flex-basis: (100% / 2);
     }
   }
@@ -67,7 +67,7 @@
 
     @media (min-width: 992px) {
       width: 470px;
-      margin-bottom: 70px;
+      margin-bottom: 65px;
     }
   }
 }
@@ -97,11 +97,12 @@
   }
 }
 .item {
+  margin-right: 150px;
   &__text {
     width: 160px;
     min-height: 45px;
     color: $white;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   &__icon-location {
@@ -177,11 +178,10 @@
   }
   &__link-icon {
     text-decoration: none;
-    z-index: 5;
   }
 
   &__icon {
-    margin-right: 20px;
+    margin-right: 14px;
     color: $white;
     font-size: 20px;
     &:hover {

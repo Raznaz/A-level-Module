@@ -37,6 +37,7 @@
     // padding: 0 10px;
     // margin-right: 10px;
     margin-bottom: 20px;
+
     background-color: $white;
     box-shadow: 0px 9px 50px 0px rgba(0, 0, 0, 0.1);
     // margin-right: 30px;
@@ -50,8 +51,9 @@
     }
 
     @media (min-width: 992px) {
-      flex-basis: calc(100% / 3 - 30px);
-      // margin-right: 30px;
+      justify-content: space-between;
+      // width: 370px;
+      // margin: 0 20px;
     }
   }
 }
@@ -70,7 +72,7 @@
     color: $card-header-text;
 
     @media (min-width: 768px) {
-      padding: 50px 0;
+      padding: 40px 0;
     }
   }
 
@@ -81,6 +83,7 @@
     font-weight: 700;
     // color: $white;
     margin-right: 10px;
+    align-self: center;
   }
 
   &__amount {
@@ -104,7 +107,7 @@
   }
   &__btn {
     margin-bottom: 30px;
-    padding: 20px 50px;
+    padding: 15px 50px;
     border: 0;
     border-radius: 30px;
     background-color: $button-bg;
@@ -117,7 +120,7 @@
 
     @media (min-width: 768px) {
       margin-bottom: 50px;
-      padding: 20px 50px;
+      // padding: 20px 50px;
     }
 
     &:hover {
@@ -136,19 +139,19 @@
     padding: 50px 50px 0;
   }
   @media (min-width: 768px) {
-    padding: 50px 60px 0;
+    padding: 30px 60px 0;
   }
   @media (min-width: 992px) {
     text-align: left;
   }
   &__item {
     display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
     position: relative;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 24px;
-    margin: 0 auto;
-    margin-bottom: 50px;
     font-weight: 400;
 
     @media (min-width: 768px) {
