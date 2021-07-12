@@ -1,5 +1,5 @@
 .footer {
-  background-color: $violet;
+  background-color: $blue;
 }
 
 .footer-inner {
@@ -55,6 +55,7 @@
       margin-bottom: 60px;
     }
   }
+
   &__text {
     margin-bottom: 30px;
     color: $white;
@@ -105,6 +106,7 @@
 
   &__icon-location {
     position: relative;
+
     &::before {
       position: absolute;
       content: '\e905';
@@ -116,6 +118,7 @@
   }
   &__icon-phone {
     position: relative;
+
     &::before {
       position: absolute;
       content: '\e909';
@@ -125,8 +128,10 @@
       font-family: icomoon;
     }
   }
+
   &__icon-mail {
     position: relative;
+
     &::before {
       position: absolute;
       content: '\e900';
@@ -139,6 +144,7 @@
 
   &__icon-web {
     position: relative;
+
     &::before {
       position: absolute;
       content: '\e90b';
@@ -180,14 +186,18 @@
     font-size: 20px;
     &:hover {
       cursor: pointer;
-      color: #ccc;
+      color: $light-grey;
     }
   }
 }
 
 .copyright {
-  padding: 40px 0;
+  padding: 20px 0;
   text-align: center;
-  background-color: #5363d8;
-  color: #b7bffc;
+  background-color: $violet;
+  color: $light-violet;
+
+  @media (min-width: 992px) {
+    padding: 40px 0;
+  }
 }

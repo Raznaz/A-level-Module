@@ -1,24 +1,48 @@
 $white: #fff;
-$dark: #555555;
-$dark-grey: #777;
-$grey888: #888;
-$grey: #999;
+$dark-grey: #555;
 $light-grey: #f2f2f2;
-$violet: #5b6ceb;
+$grey999: #999;
+$grey888: #888;
+$grey777: #777;
+$grey_d7: #d7d7d7;
+$light-blue: #5363db;
+$blue: #5b6ceb;
+$dark-blue: #475bf1;
+$violet: #5363d8;
+$light-violet: #b7bffc;
 
-$nav-active: #5363db;
-$overlay-bg: rgba(83, 99, 219, 0.7);
+// Fonts
+$main-fonts: 'Open Sans', Arial, Helvetica, sans-serif;
+$creative-font: 'FREESCPT', 'Open Sans', Arial, Helvetica, sans-serif;
+
+// Navigation
+$nav: $dark-grey;
+$nav-active: $light-blue;
+
+// Form
+$form-title: $light-blue;
+$input-bg: $light-grey;
+$input-text: $grey888;
+
+// Title section
+$title: $blue;
+$subtitle: $grey777;
+
+// Text
+$text: $dark-grey;
 
 // Button
-$btn-bg: $violet;
-$btn-acitve: #475bf1;
-$title: $violet;
+$button-bg: $blue;
+$button-hover: $dark-blue;
 
 // Card
-$card-title: $dark-grey;
-$card-text: #555;
-$card-type: #999;
+$card-title: $grey777;
+$card-text: $dark-grey;
+$card-type: $grey999;
 
-// path img
-$first-img: url(../../images/img-visual.jpg);
-$second-img: url(../../images/img-visual02.jpg);
+// Gallery
+$img-overlay: $blue;
+
+// Card
+$card-header-bg: $blue;
+$card-header-text: $white;

@@ -1,6 +1,3 @@
-.about {
-}
-
 .about-inner {
   display: flex;
   flex-direction: column;
@@ -18,10 +15,21 @@
   @media (min-width: 768px) {
     margin-bottom: 0;
   }
+
   &__title {
     margin-bottom: 25px;
   }
+
   &__text {
     max-width: 470px;
+    color: $text;
+
+    @media (min-width: 768px) {
+      max-width: 300px;
+    }
+
+    @media (min-width: 992px) {
+      max-width: 470px;
+    }
   }
 }
