@@ -13,6 +13,7 @@
     &:hover .gallery__overlay {
       opacity: 0.8;
     }
+
     &:hover .gallery__link {
       opacity: 1;
     }
@@ -24,13 +25,13 @@
 
   &__overlay {
     position: absolute;
+    width: 100%;
+    height: 100%;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     opacity: 0;
-    width: 100%;
-    height: 100%;
     background-color: $img-overlay;
     transition: opacity 0.4s ease;
     z-index: 1;
@@ -53,16 +54,18 @@
     &:hover {
       background-color: $light-grey;
     }
+
     &:hover .gallery__find-icon {
       color: $button-hover;
     }
   }
+
   &__find-icon {
     position: absolute;
-    font-size: 20px;
-    color: $blue;
     top: 50%;
     left: 50%;
+    font-size: 20px;
+    color: $blue;
     transition: color 0.3s linear;
     transform: translate(-50%, -50%);
   }

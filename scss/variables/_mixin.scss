@@ -1,13 +1,8 @@
-@mixin presentation-bg($minH, $srcImg, $overBg) {
-  max-width: 100%;
-  min-height: $minH;
-  background-image: $srcImg;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  &--overlay {
-    width: 100%;
-    min-height: $minH;
-    background-color: $overBg;
-  }
+@mixin icon-before-element($icon) {
+  position: absolute;
+  content: $icon;
+  top: 0px;
+  left: -40px;
+  font-size: 20px;
+  font-family: icomoon;
 }

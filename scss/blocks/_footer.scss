@@ -7,13 +7,6 @@
   flex-direction: column;
   margin: 0 -10px;
 
-  @media (min-width: 567px) {
-    // flex-direction: row;
-  }
-
-  @media (min-width: 768px) {
-    // flex-direction: row;
-  }
   @media (min-width: 992px) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -74,59 +67,55 @@
 
 .contact-inform-inner {
   display: flex;
-  flex-direction: column;
-  // width: 470px;
   padding-left: 40px;
+  flex-direction: column;
 
   @media (min-width: 567px) {
     flex-direction: row;
   }
 
-  @media (min-width: 768px) {
-    display: flex;
-    padding-left: 40px;
-  }
-
   @media (min-width: 992px) {
-    display: flex;
     width: 470px;
-    padding-left: 40px;
   }
   &__items {
     flex-basis: calc(100% / 2);
   }
 }
+
 .item {
   margin-right: 150px;
+
   &__text {
     width: 160px;
     min-height: 45px;
-    color: $white;
     margin-bottom: 20px;
+    color: $white;
   }
 
   &__icon-location {
     position: relative;
 
     &::before {
-      position: absolute;
-      content: '\e905';
-      top: 0px;
-      left: -40px;
-      font-size: 20px;
-      font-family: icomoon;
+      @include icon-before-element('\e905');
+      // position: absolute;
+      // content: '\e905';
+      // top: 0px;
+      // left: -40px;
+      // font-size: 20px;
+      // font-family: icomoon;
     }
   }
   &__icon-phone {
     position: relative;
 
     &::before {
-      position: absolute;
-      content: '\e909';
-      top: 0px;
-      left: -40px;
-      font-size: 20px;
-      font-family: icomoon;
+      @include icon-before-element('\e909');
+      // position: absolute;
+      // content: '\e909';
+      // top: 0px;
+      // left: -40px;
+      // font-size: 20px;
+      // font-family: icomoon;
     }
   }
 
@@ -134,12 +123,14 @@
     position: relative;
 
     &::before {
-      position: absolute;
-      content: '\e900';
-      top: 0px;
-      left: -40px;
-      font-size: 20px;
-      font-family: icomoon;
+      @include icon-before-element('\e900');
+
+      // position: absolute;
+      // content: '\e900';
+      // top: 0px;
+      // left: -40px;
+      // font-size: 20px;
+      // font-family: icomoon;
     }
   }
 
@@ -147,12 +138,14 @@
     position: relative;
 
     &::before {
-      position: absolute;
-      content: '\e90b';
-      top: 0px;
-      left: -40px;
-      font-size: 20px;
-      font-family: icomoon;
+      @include icon-before-element('\e90b');
+
+      // position: absolute;
+      // content: '\e90b';
+      // top: 0px;
+      // left: -40px;
+      // font-size: 20px;
+      // font-family: icomoon;
     }
   }
 
@@ -176,6 +169,7 @@
     display: block;
     margin-bottom: 100px;
   }
+
   &__link-icon {
     text-decoration: none;
   }
@@ -184,6 +178,7 @@
     margin-right: 14px;
     color: $white;
     font-size: 20px;
+
     &:hover {
       cursor: pointer;
       color: $light-grey;
