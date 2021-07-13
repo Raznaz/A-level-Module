@@ -179,7 +179,7 @@ img {
 
 @media (min-width: 768px) {
   .section {
-    margin-bottom: 140px;
+    margin-bottom: 120px;
   }
 }
 
@@ -711,7 +711,13 @@ img {
 }
 
 .card__types-yoga {
+  display: block;
+  text-decoration: none;
   color: #999;
+}
+
+.card__types-yoga:hover {
+  color: #5363db;
 }
 
 .gallery {
@@ -745,7 +751,6 @@ img {
 
 .gallery__img {
   display: block;
-  width: 100%;
 }
 
 .gallery__overlay {

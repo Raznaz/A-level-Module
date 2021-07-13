@@ -111,7 +111,12 @@
     }
   }
   &__types-yoga {
+    display: block;
+    text-decoration: none;
     color: $card-type;
+    &:hover {
+      color: $nav-active;
+    }
   }
 }
 
