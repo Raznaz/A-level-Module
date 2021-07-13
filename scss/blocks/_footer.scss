@@ -97,12 +97,6 @@
 
     &::before {
       @include icon-before-element('\e905');
-      // position: absolute;
-      // content: '\e905';
-      // top: 0px;
-      // left: -40px;
-      // font-size: 20px;
-      // font-family: icomoon;
     }
   }
   &__icon-phone {
@@ -110,12 +104,6 @@
 
     &::before {
       @include icon-before-element('\e909');
-      // position: absolute;
-      // content: '\e909';
-      // top: 0px;
-      // left: -40px;
-      // font-size: 20px;
-      // font-family: icomoon;
     }
   }
 
@@ -124,13 +112,6 @@
 
     &::before {
       @include icon-before-element('\e900');
-
-      // position: absolute;
-      // content: '\e900';
-      // top: 0px;
-      // left: -40px;
-      // font-size: 20px;
-      // font-family: icomoon;
     }
   }
 
@@ -139,13 +120,6 @@
 
     &::before {
       @include icon-before-element('\e90b');
-
-      // position: absolute;
-      // content: '\e90b';
-      // top: 0px;
-      // left: -40px;
-      // font-size: 20px;
-      // font-family: icomoon;
     }
   }
 
