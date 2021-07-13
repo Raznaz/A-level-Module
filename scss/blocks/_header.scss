@@ -1,3 +1,7 @@
+.header--offset {
+  margin-bottom: 120px;
+}
+
 .header {
   &__nav {
     position: relative;
@@ -159,6 +163,13 @@
     border: none;
     background-color: $input-bg;
 
+    &:focus {
+      font-size: 14px;
+      color: $text;
+      outline: none;
+      box-shadow: 0 0 3pt 2pt $blue;
+    }
+
     &::placeholder {
       color: $input-text;
     }
@@ -171,6 +182,11 @@
     color: $input-text;
     background-color: $input-bg;
     border: none;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 3pt 2pt $blue;
+    }
   }
 
   &__btn {

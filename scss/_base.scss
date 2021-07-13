@@ -75,14 +75,6 @@ img {
   }
 }
 
-.section {
-  margin-bottom: 40px;
-
-  @media (min-width: 768px) {
-    margin-bottom: 120px;
-  }
-}
-
 .overlay {
   &::after {
     position: absolute;

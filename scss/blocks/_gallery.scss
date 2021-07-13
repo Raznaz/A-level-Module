@@ -1,3 +1,7 @@
+.gallery--offset {
+  margin-bottom: 120px;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -62,11 +66,6 @@
 
   &__find-icon {
     @extend %block-center;
-    // display: block;
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
     font-size: 20px;
     color: $blue;
     transition: color 0.3s linear;
