@@ -1,5 +1,9 @@
 .about--offset {
-  margin-bottom: 220px;
+  margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 220px;
+  }
 }
 .about-inner {
   display: flex;
