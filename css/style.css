@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'icomoon';
-  src: url("../../fonts/icomoon.eot?nzqlrz");
-  src: url("../../fonts/icomoon.eot?nzqlrz#iefix") format("embedded-opentype"), url("../../fonts/icomoon.ttf?nzqlrz") format("truetype"), url("../../fonts/icomoon.woff?nzqlrz") format("woff"), url("../../fonts/icomoon.svg?nzqlrz#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?nzqlrz");
+  src: url("../fonts/icomoon.eot?nzqlrz#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?nzqlrz") format("truetype"), url("../fonts/icomoon.woff?nzqlrz") format("woff"), url("../fonts/icomoon.svg?nzqlrz#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -89,6 +89,12 @@
 
 .icon-pinterest2:before {
   content: '\ead2';
+}
+
+@font-face {
+  font-family: 'FREESCPT';
+  src: url("../fonts/FREESCPT.eot");
+  src: url("../fonts/FREESCPT.eot") format("embedded-opentype"), url("../fonts/FREESCPT.woff2") format("woff2"), url("../fonts/FREESCPT.woff") format("woff"), url("../fonts/FREESCPT.ttf") format("truetype"), url("../fonts/FREESCPT.svg#FREESCPT") format("svg");
 }
 
 .gallery__find-icon, .element__img {
@@ -1134,6 +1140,7 @@ img {
 
 .gallery__img {
   display: block;
+  width: 100%;
 }
 
 .gallery__overlay {

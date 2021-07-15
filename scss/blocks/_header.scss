@@ -12,6 +12,7 @@
     padding: 20px 0 20px 0;
   }
 }
+
 .header-inner {
   display: flex;
   justify-content: space-between;
@@ -178,6 +179,7 @@
       color: $input-text;
     }
   }
+
   &__select {
     width: 100%;
     margin-bottom: 20px;

@@ -7,6 +7,7 @@
   display: flex;
   align-items: flex-start;
 }
+
 .slick-list {
   overflow: hidden;
 }
@@ -14,6 +15,7 @@
 .slider {
   position: relative;
   padding: 0 20px;
+
   .slick-arrow {
     position: absolute;
     top: 50%;
@@ -37,6 +39,7 @@
       cursor: pointer;
       box-shadow: 0px 0px 10px rgba(145, 145, 145, 0.6);
     }
+
     &::after {
       content: '';
       position: absolute;
@@ -57,6 +60,7 @@
     transform: translate(0, -50%) rotate(180deg);
     left: 0;
   }
+
   .slick-arrow.slick-next {
     right: 0;
   }

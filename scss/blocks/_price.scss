@@ -1,6 +1,7 @@
 .price {
   position: relative;
 }
+
 .price--decor {
   padding: 20px 0;
   background-image: url(../../images/bg-03.jpg);
@@ -13,6 +14,7 @@
     background-size: contain;
   }
 }
+
 .price-row {
   @media (min-width: 567px) {
     display: flex;
